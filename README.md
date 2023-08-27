@@ -1,4 +1,4 @@
 # snorlaxscave
 game site v1
-current devs:
-snorlax, @derpmandev, @mecharis-420
+# devs:
+snorlax, derpman, mecharis-420
