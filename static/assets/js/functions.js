@@ -18,6 +18,16 @@ function google () {
 
 }
 
+function github () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://github.com/');
+    });
+
+}
+
 function coolMathGames () {
 
     window.navigator.serviceWorker.register('/sw.js', {
