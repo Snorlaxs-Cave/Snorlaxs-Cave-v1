@@ -169,6 +169,16 @@ function crossy () {
 
 }
 
+function garden () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://jrob774.itch.io/grow-your-guarden');
+    });
+
+}
+
 function onevonelol () {
 
     window.navigator.serviceWorker.register('/sw.js', {
