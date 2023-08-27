@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/img/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <script src="/assets/js/functions.js"></script>
+  <title>Apps | Snorlax's Cave</title>
+</head>
+<body>
+  <nav>
+    <div class="heading">
+      <a href="https://discord.gg/zX9zN69JPH" class="headinglink" target="new">Snorlaxs Cave</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/games">Games</a></li>
+      <li><a class="active" href="/apps">Apps</a></li>
+      <li><a href="/proxy">Proxy</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="search-bar" style="display: flex; justify-content: center;">
+    <form id="searchForm" onsubmit="return false;">
+      <input id="searchApps" placeholder="Search Apps" class="searchbar">
+    </form>
+  </div>
+  <br>
+  <div class="apps">
+    <div class="search-results" style="display: flex; justify-content: center; flex-wrap: wrap; gap:10px;">
+      <div id="searchMessage" style="color:white;display:none;text-align: center;font-size: 30px;margin:20px;font-family:Montserrat,sans-serif;"></div>
+      <a href="#" onclick="discord()">
+      <img src="/assets/img/discord.jpg" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Discord</img>
+    </a>
+    <a href="#" onclick="google()">
+      <img src="/assets/img/google.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Google</img>
+    </a>
+    <a href="#" onclick="coolMathGames()">
+      <img src="/assets/img/coolmathgames.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>CoolMath</img>
+    </a>
+    <a href="#" onclick="spotify()">
+      <img src="/assets/img/spotify.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Spotify</img>
+    </a>
+    <a href="#" onclick="youtube()">
+      <img src="/assets/img/youtube.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Youtube</img>
+    </a>
+    <a href="#" onclick="tiktok()">
+      <img src="/assets/img/tiktok.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Tiktok</img>
+    </a>
+    <a href="#" onclick="chess()">
+      <img src="/assets/img/chess.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Chess.com</img>
+    </a>
+    <a href="#" onclick="reddit()">
+      <img src="/assets/img/reddit.png" class="rounded" draggable="false" style="width:100px;height:100px;"><br>Reddit</img>
+    </a>
+  </div>
+  <script>
+    document.getElementById('searchApps').addEventListener('input', function(event) {
+      const query = this.value.toLowerCase();
+      const links = document.getElementsByClassName('search-results')[0].getElementsByTagName('a');
+      let foundResults = false;
+
+      for (let i = 0; i < links.length; i++) {
+        const link = links[i];
+        const linkText = link.innerText.toLowerCase();
+
+        if (linkText.includes(query)) {
+          link.style.display = 'block';
+          foundResults = true;
+        } else {
+          link.style.display = 'none';
+        }
+      }
+
+      if (!foundResults) {
+        const message = document.getElementById('searchMessage');
+        message.innerText = 'No Apps Found.';
+        message.style.display = 'block';
+      } else {
+        const message = document.getElementById('searchMessage');
+        message.style.display = 'none';
+      }
+    });
+  </script>
+    <script src="/assets/js/index.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+</body>
+</html>
