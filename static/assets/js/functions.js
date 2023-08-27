@@ -18,6 +18,16 @@ function google () {
 
 }
 
+function soundcloud () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://soundcloud.com/');
+    });
+
+}
+
 function github () {
 
     window.navigator.serviceWorker.register('/sw.js', {
