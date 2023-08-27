@@ -9,6 +9,7 @@ Snorlax's Cave is a UV built proxy and game site **(v1.0 beta)**
 ## Contributors:
 - Snorlax (Owner)
 - Derpman
+- mecahris-420
 
 ### Join our community!
 https://discord.gg/7hmAtV7q
