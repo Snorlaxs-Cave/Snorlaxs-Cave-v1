@@ -480,6 +480,16 @@ function sonicadvance3 () {
 
 }
 
+function x () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://x.com');
+    });
+
+}
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
