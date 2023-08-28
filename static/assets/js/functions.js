@@ -530,6 +530,16 @@ function emerald () {
 
 }
 
+function doge2 () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/Dogeminer2/index.html');
+    });
+
+}
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
