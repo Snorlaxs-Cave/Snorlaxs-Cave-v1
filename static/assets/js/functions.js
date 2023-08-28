@@ -178,7 +178,7 @@ function poki () {
 
 }
 
-function cookie () {
+function cookieclicker () {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
