@@ -28,6 +28,26 @@ function soundcloud () {
 
 }
 
+function twitch () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://twitch.tv');
+    });
+
+}
+
+function max () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://max.com');
+    });
+
+}
+
 function github () {
 
     window.navigator.serviceWorker.register('/sw.js', {
