@@ -379,6 +379,7 @@ function tombofthemask () {
 
 }
 
+
 function troll () {
 
     window.navigator.serviceWorker.register('/sw.js', {
