@@ -450,12 +450,12 @@ function shittle () {
 
 }
 
-function krunker () {
+function p2048 () {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://krunker.io/');
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://filipekiss.github.io/2048/');
     });
 
 }
