@@ -450,6 +450,16 @@ function zeldaminish () {
 
 }
 
+function sonicadvance3 () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#sonic_advance3');
+    });
+
+}
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
