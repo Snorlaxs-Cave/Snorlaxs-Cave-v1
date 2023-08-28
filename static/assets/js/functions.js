@@ -229,6 +229,16 @@ function onevonelol () {
 
 }
 
+function sfnf () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://kbhgames.com/game/friday-night-funkin-vs-snorlax');
+    });
+
+}
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
