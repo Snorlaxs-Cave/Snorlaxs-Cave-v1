@@ -379,6 +379,16 @@ function tombofmask () {
 
 }
 
+function troll () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.youtube.com/watch?v=PXqcHi2fkXI');
+    });
+
+}
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
