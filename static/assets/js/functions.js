@@ -410,6 +410,16 @@ function ovo () {
 
 }
 
+function geodash () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://scratch.mit.edu/projects/105500895/embed');
+    });
+
+}
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
