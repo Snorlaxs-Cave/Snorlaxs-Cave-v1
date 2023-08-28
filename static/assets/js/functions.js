@@ -460,7 +460,7 @@ function krunker () {
 
 }
 
-function zeldaminish () {
+function zeldaminishcap () {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
