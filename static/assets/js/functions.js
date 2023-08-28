@@ -259,6 +259,26 @@ function moto () {
 
 }
 
+function ball () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://red-ball4.com/red-ball-4');
+    });
+
+}
+
+function subway () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://subway-surfers.me/');
+    });
+
+}
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
