@@ -229,6 +229,16 @@ function onevonelol () {
 
 }
 
+function pool () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://8ballpool.com/en/game');
+    });
+
+}
+
 function sfnf () {
 
     window.navigator.serviceWorker.register('/sw.js', {
