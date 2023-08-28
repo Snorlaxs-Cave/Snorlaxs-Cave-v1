@@ -1,3 +1,23 @@
+function paramount () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('hhttps://www.paramountplus.com/');
+    });
+
+}
+
+function amazon () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('hhttps://amazon.com/');
+    });
+
+}
+
 function discord () {
 
     window.navigator.serviceWorker.register('/sw.js', {
