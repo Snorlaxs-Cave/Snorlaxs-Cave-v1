@@ -3,7 +3,17 @@ function paramount () {
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('hhttps://www.paramountplus.com/');
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.paramountplus.com/');
+    });
+
+}
+
+function vs () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://vscode.dev/');
     });
 
 }
@@ -13,7 +23,7 @@ function amazon () {
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('hhttps://amazon.com/');
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://amazon.com/');
     });
 
 }
