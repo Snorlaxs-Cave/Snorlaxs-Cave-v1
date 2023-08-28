@@ -369,7 +369,7 @@ function drifthunt () {
 
 }
 
-function tombofmask () {
+function tombofthemask () {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
