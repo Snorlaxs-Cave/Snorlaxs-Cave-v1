@@ -8,6 +8,16 @@ function paramount () {
 
 }
 
+function widget () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://e.widgetbot.io/channels/1107344487958724681/1118576886038143157');
+    });
+
+}
+
 function ani () {
 
     window.navigator.serviceWorker.register('/sw.js', {
