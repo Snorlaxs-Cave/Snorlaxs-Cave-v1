@@ -28,6 +28,16 @@ function ani () {
 
 }
 
+function whatsapp () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://web.whatsapp.com/');
+    });
+
+}
+
 function vs () {
 
     window.navigator.serviceWorker.register('/sw.js', {
