@@ -254,7 +254,7 @@ function crossy () {
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://poki.com/en/g/crossy-road');
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://crossyroadunblocked.github.io/');
     });
 
 }
