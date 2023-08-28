@@ -369,6 +369,16 @@ function drifthunt () {
 
 }
 
+function tombofmask () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://topvazstore.github.io/g8/tomb-of-the-mask/');
+    });
+
+}
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
