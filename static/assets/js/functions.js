@@ -359,6 +359,16 @@ function doge1 () {
 
 }
 
+function drifthunt () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://webglmath.github.io/drift-hunters/');
+    });
+
+}
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
