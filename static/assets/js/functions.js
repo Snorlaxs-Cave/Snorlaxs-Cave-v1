@@ -329,6 +329,16 @@ function subway () {
 
 }
 
+function one () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://hgentry.github.io/1/');
+    });
+
+}
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
