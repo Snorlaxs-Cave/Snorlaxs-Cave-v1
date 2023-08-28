@@ -113,7 +113,7 @@ function cookie () {
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://cookie-clicker.io');
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://orteil.dashnet.org/cookieclicker/');
     });
 
 }
