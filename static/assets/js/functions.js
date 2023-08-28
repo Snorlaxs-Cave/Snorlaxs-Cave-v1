@@ -389,6 +389,16 @@ function troll () {
 
 }
 
+function basketball () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://topvazstore.github.io/g/basketball-stars');
+    });
+
+}
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
