@@ -625,7 +625,7 @@ function vex7 () {
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://vexunblocked.github.io/7/');
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.coolmathgames.com/sites/default/files/public_games/43835/?gd_sdk_referrer_url=https%3A%2F%2Fwww.coolmathgames.com%2F0-vex-7');
     });
 
 }
