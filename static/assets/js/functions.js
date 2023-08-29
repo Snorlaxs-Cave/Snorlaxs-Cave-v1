@@ -8,6 +8,16 @@ function paramount () {
 
 }
 
+function pokemon.com () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.pokemon.com/');
+    });
+
+}
+
 function widget () {
 
     window.navigator.serviceWorker.register('/sw.js', {
