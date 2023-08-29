@@ -580,6 +580,16 @@ function zombs () {
 
 }
 
+function stumble () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.stumbleguys.com/');
+    });
+
+}
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
