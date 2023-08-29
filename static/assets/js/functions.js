@@ -8,7 +8,7 @@ function paramount () {
 
 }
 
-function pokemon.com () {
+function pokemoncom () {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
