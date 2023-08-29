@@ -610,6 +610,26 @@ function fortnite () {
 
 }
 
+function vex5 () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/vex5/index.html');
+    });
+
+}
+
+function vex7 () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://vexunblocked.github.io/7/');
+    });
+
+}
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
