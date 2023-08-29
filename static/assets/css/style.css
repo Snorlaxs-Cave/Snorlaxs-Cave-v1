@@ -82,11 +82,11 @@ nav {
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
+  transition: .2s;
 }
 
 .headinglink:hover {
   background-color: rgba(0, 0, 0, 0.24);
-  border-radius: 10px;
   transition: .2s;
 }
 
