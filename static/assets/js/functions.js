@@ -590,12 +590,12 @@ function stumble () {
 
 }
 
-function mopeio () {
+function diep () {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://mope.io/');
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://diep.io/');
     });
 
 }
