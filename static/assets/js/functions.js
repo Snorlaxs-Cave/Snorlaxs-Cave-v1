@@ -660,6 +660,16 @@ function red () {
 
 }
 
+function leaf () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://cattn.github.io/gba/launcher.html#pokemongreen');
+    });
+}
+
+
 function emulatorJS () {
    location.href = '/emulatorjs';
 }
