@@ -678,6 +678,15 @@ function platinum () {
     });
 }
 
+function tiny () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://topvazstore.github.io/g/tiny-fishing');
+    });
+}
+
 
 function emulatorJS () {
    location.href = '/emulatorjs';
