@@ -645,7 +645,7 @@ function retro () {
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://raw.githack.com/3kh0/3kh0-assets/main/retro-bowl/index.html');
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://game316009.konggames.com/gamez/0031/6009/live/index.html');
     });
 
 }
