@@ -705,6 +705,15 @@ function  smash () {
     });
 }
 
+function  crazygames () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.crazygames.com/');  
+    });
+}
+
 
 function emulatorJS () {
    location.href = '/emulatorjs';
