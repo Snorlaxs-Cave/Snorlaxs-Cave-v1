@@ -5,7 +5,6 @@ body{
   background-attachment:fixed;
   line-height:20px; font-size:14px;
   margin:0;
-  backdrop-filter: brightness(50%);
   height: 100vh;
 }
 
