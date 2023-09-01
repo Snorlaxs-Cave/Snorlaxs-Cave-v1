@@ -5,7 +5,7 @@ body{
   background-attachment:fixed;
   line-height:20px; font-size:14px;
   margin:0;
-  brightness: 50;
+  filter: brightness(50%);
 }
 
 * {
