@@ -35,11 +35,9 @@ app.get("/about", (req, res) => {
 });
 
 
-// Currently do not have a 404 page
-/* app.get("/*", (req, res) => {
-  res.redirect("/404");
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "static", "404.html"));
 });
-*/
 
 server.on("request", (req, res) => {
   if (bareServer.shouldRoute(req)) {
