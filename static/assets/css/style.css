@@ -5,6 +5,7 @@ body{
   background-attachment:fixed;
   line-height:20px; font-size:14px;
   margin:0;
+  brightness: 50;
 }
 
 * {
@@ -33,12 +34,14 @@ button {
   background-color: transparent;
   border: 2px solid white;
   transition: .2s;
+  cursor: pointer;
 }
 
 button:hover {
   color: black;
   background-color: white;
   transition: .2s;
+  cursor: pointer;
 }
 
 .body-text {
