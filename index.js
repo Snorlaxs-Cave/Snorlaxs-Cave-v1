@@ -21,13 +21,13 @@ app.use(express.static(path.join(__dirname, "static")));
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "index.html"));
 });
-app.get("/proxy", (req, res) => {
+app.get("/science", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "Proxy.html"));
 });
-app.get("/games", (req, res) => {
+app.get("/math", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "Games.html"));
 });
-app.get("/apps", (req, res) => {
+app.get("/english", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "Apps.html"));
 });
 app.get("/about", (req, res) => {
