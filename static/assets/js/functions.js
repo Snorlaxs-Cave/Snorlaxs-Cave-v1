@@ -731,3 +731,8 @@ function cloak() {
 function ourDiscord () {
     window.location.href = 'https://discord.gg/Cqaa8x82Ch';
 }
+
+
+function patreon () {
+    window.location.href = 'https://patreon.com/SnorlaxCave';
+}
