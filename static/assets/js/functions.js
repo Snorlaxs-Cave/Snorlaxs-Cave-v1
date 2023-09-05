@@ -736,3 +736,9 @@ function ourDiscord () {
 function patreon () {
     window.location.href = 'https://patreon.com/SnorlaxCave';
 }
+
+
+
+function ourgithub () {
+    window.location.href = 'https://github.com/SPS-Services/cave-v1';
+}
