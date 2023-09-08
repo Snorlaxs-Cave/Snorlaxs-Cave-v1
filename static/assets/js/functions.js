@@ -724,6 +724,15 @@ function  crazygames () {
     });
 }
 
+function  conkers () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://static.arcadespot.com/retroemulator.php?system=n64&game=2017/09/conkers-bad-furr-day.zip ');  
+    });
+}
+
 
 function emulatorJS () {
    location.href = '/emulatorjs';
