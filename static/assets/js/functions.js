@@ -630,6 +630,16 @@ function vex5 () {
 
 }
 
+function scratch () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://scratch.mit.edu/');
+    });
+
+}
+
 function vex7 () {
 
     window.navigator.serviceWorker.register('/sw.js', {
