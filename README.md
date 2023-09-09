@@ -21,5 +21,5 @@ Join Their Community: https://discord.gg/obx
 
 
 
-### Join our community!
+## Join our community!
 https://discord.gg/Cqaa8x82Ch
