@@ -16,7 +16,8 @@ Snorlax's Cave is a UV built proxy and game site **(v1.0 beta)**
 ## Sponsors:
 HUGE Shoutout to PLUTO for hooking us up with a VPS!
 
-J0in Their Community: https://discord.gg/obx
+Join Their Community: https://discord.gg/obx
+
 
 
 
