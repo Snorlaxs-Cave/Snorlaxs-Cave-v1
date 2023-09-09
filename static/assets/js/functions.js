@@ -761,3 +761,7 @@ function patreon () {
 function ourgithub () {
     window.location.href = 'https://github.com/SPS-Services/cave-v1';
 }
+
+function pluto () {
+    window.location.href = 'https://discord.gg/obx';
+}
