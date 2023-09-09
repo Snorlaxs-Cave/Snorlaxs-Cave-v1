@@ -13,4 +13,4 @@ Snorlax's Cave is a UV built proxy and game site **(v1.0 beta)**
 - tlochsta
 
 ### Join our community!
-https://discord.gg/7hmAtV7q
+https://discord.gg/Cqaa8x82Ch
