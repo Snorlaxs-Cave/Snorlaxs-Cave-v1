@@ -329,6 +329,16 @@ function sfnf () {
 
 }
 
+function BGS () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://bigfoot.pages.dev/');
+    });
+
+}
+
 function moto () {
 
     window.navigator.serviceWorker.register('/sw.js', {
