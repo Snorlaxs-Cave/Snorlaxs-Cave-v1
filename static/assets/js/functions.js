@@ -755,6 +755,15 @@ function cloak() {
     window.close('','_parent','');
   }
 
+function glatic () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://glatic.games/');
+    });
+
+}
   
 
 function ourDiscord () {
