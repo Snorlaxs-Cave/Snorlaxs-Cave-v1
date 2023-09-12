@@ -570,7 +570,7 @@ function doge2 () {
 
 }
 
-function doge2 () {
+function doge2miner () {
 
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
@@ -781,7 +781,7 @@ function replit () {
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://replit.com/");
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://replit.com/');
     });
 
 }  
