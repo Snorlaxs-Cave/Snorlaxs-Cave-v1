@@ -339,6 +339,16 @@ function BGS () {
 
 }
 
+function math () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://mathheaven.org/');
+    });
+
+}
+
 function moto () {
 
     window.navigator.serviceWorker.register('/sw.js', {
