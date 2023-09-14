@@ -796,6 +796,16 @@ function replit () {
 
 }  
 
+function shell () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://shellshock.io/');
+    });
+
+}  
+
 function ourDiscord () {
     window.location.href = 'https://discord.gg/Cqaa8x82Ch';
 }
@@ -814,3 +824,5 @@ function ourgithub () {
 function pluto () {
     window.location.href = 'https://discord.gg/obx';
 }
+
+
