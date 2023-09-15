@@ -806,6 +806,17 @@ function shell () {
 
 }  
 
+function boss () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://bonbang.github.io/store5/drift-boss/');
+    });
+
+}  
+
+
 function ourDiscord () {
     window.location.href = 'https://discord.gg/Cqaa8x82Ch';
 }
