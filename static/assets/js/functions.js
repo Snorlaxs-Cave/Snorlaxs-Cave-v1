@@ -824,6 +824,16 @@ function baseball () {
         location.href=__uv$config.prefix + __uv$config.encodeUrl('https://googlebaseball.github.io/file/');
     });
 
+}
+
+function pheonix () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://static.arcadespot.com/retroemulator.php?system=nds&game=2017/10/phoenix-wright-ace-attorney.zip');
+    });
+
 }  
 
 
