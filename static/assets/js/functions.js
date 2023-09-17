@@ -826,6 +826,16 @@ function baseball () {
 
 }
 
+function cricket () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://doodlecricket.github.io/#/');
+    });
+
+}
+
 function pheonix () {
 
     window.navigator.serviceWorker.register('/sw.js', {
