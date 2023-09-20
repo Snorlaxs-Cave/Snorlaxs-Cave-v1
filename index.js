@@ -34,7 +34,10 @@ app.get("/about", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "About.html"));
 });
 app.get("/snorlax", (req, res) => {
-  res.sendFile(path.join(__dirname, "static", "snorlax.html"));
+  res.sendFile(path.join(__dirname, "static/people-secrets/", "snorlax.html"));
+});
+app.get("/fowntain", (req, res) => {
+  res.sendFile(path.join(__dirname, "static/people-secrets/", "fowntain.html"));
 });
 app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "404.html"));
