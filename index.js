@@ -45,6 +45,9 @@ app.get("/bigfoot", (req, res) => {
 app.get("/burb", (req, res) => {
   res.sendFile(path.join(__dirname, "static/people-secrets/", "burb.html"));
 });
+app.get("/derpman", (req, res) => {
+  res.sendFile(path.join(__dirname, "static/people-secrets/", "derpman.html"));
+});
 app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "static", "404.html"));
 });
@@ -66,7 +69,7 @@ server.on("upgrade", (req, socket, head) => {
 });
 
 server.on("listening", () => {
-  console.log(`Snorlax's Cave listening on port ${process.env.PORT}`);
+  console.log(`Snorlax's Cave listening on port 8080 ${process.env.PORT}`);
 });
 
 server.listen({
