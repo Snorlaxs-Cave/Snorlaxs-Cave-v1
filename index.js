@@ -39,6 +39,9 @@ app.get("/snorlax", (req, res) => {
 app.get("/fowntain", (req, res) => {
   res.sendFile(path.join(__dirname, "static/people-secrets/", "fowntain.html"));
 });
+app.get("/bigfoot", (req, res) => {
+  res.sendFile(path.join(__dirname, "static/people-secrets/", "bigfoot.html"));
+});
 app.get("/burb", (req, res) => {
   res.sendFile(path.join(__dirname, "static/people-secrets/", "burb.html"));
 });
