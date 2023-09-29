@@ -13,8 +13,6 @@ Snorlax's Cave is a UV built proxy and game site **(v1.0 Release)**
 - tlochsta
 - Peak
 
-## Sponsors:
-
 
 ## Join our community!
 https://discord.gg/Cqaa8x82Ch
