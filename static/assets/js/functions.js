@@ -866,6 +866,10 @@ function patreon () {
     window.location.href = 'https://patreon.com/SnorlaxCave';
 }
 
+function email () {
+    window.location.href = 'https://snorlaxscave@outlook.com';
+}
+
 
 
 function ourgithub () {
