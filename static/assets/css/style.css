@@ -16,6 +16,11 @@ body{
 
 }
 
+#DMCA{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
 p {
   font-family: "Montserrat", sans-serif;
   color: white;
