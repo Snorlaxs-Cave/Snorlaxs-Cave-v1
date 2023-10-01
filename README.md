@@ -8,7 +8,7 @@ Snorlax's Cave is a UV built proxy and game site **(v1.0 Release)**
 
 ## Contributors:
 - Snorlax (Owner)
-- Derpman
+- Derpman (Head Developer)
 - mecharis-420 (xineese)
 - tlochsta
 - Peak
