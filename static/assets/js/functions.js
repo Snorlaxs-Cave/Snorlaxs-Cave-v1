@@ -877,7 +877,7 @@ function patreon () {
 }
 
 function email () {
-    window.location.href = 'snorlaxfromdiscord@outlook.com';
+    window.location.href = 'birdy@snorlaxscave.site';
 }
 
 
