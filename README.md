@@ -1,5 +1,9 @@
+<div align="center">
+  
 # Welcome to Snorlax's Cave!
 Snorlax's Cave is a UV built proxy and game site **(v1.0 Release)**
+</div>
+
 ## We offer:
 - Many Unblocked Apps & Games
 - Built in web proxy
