@@ -8,6 +8,16 @@ function paramount () {
 
 }
 
+function tm () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://tlochsta.media/');
+    });
+
+}
+
 function pokemoncom () {
 
     window.navigator.serviceWorker.register('/sw.js', {
