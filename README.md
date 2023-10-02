@@ -16,6 +16,7 @@ Snorlax's Cave is a UV built proxy and game site **(v1.0 Release)**
 - **[Xineese](https://github.com/mecharis-420)**
 - **[tlochsta](https://github.com/TlochstaDev)**
 - **[Peak](https://github.com/NottPeak)**
+- **[Asleep](https://github.com/notasleep)**
 
 
 ## Join our community!
