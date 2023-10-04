@@ -11,7 +11,7 @@ Snorlax's Cave is a UV built proxy and game site **(v1.0 Release)**
 - Many customizable features
 
 ## Hosting
-**Warning: You will be unable to edit Ultraviolet due to the ban of proxies on Replit, if this is an issue, you should set up using a different method!**
+**Warning: You will be unable to edit Ultraviolet due to the ban of proxies on Replit, if this is an issue, you should set up using a different method!**<br/>
 [![Run on Replit](https://binbashbanana.github.io/deploy-buttons/buttons/remade/replit.svg)](https://replit.com/github/SPS-Services/Snorlaxs-Cave-v1)
 [![Remix on Glitch](https://binbashbanana.github.io/deploy-buttons/buttons/remade/glitch.svg)](https://glitch.com/edit/#!/import/github/SPS-Services/Snorlaxs-Cave-v1)
 [![Deploy on Railway](https://binbashbanana.github.io/deploy-buttons/buttons/remade/railway.svg)](https://railway.app/new/template?template=https://github.com/SPS-Services/Snorlaxs-Cave-v1)
