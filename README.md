@@ -25,5 +25,5 @@ Snorlax's Cave is a UV built proxy and game site **(v1.0 Release)**
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/SPS-Services/Snorlaxs-Cave-v1)
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repositoryurl=https://github.com/SPS-Services/Snorlaxs-Cave-v1)
 ## Contributors:
-[![Contrib](https://contrib.rocks/image?repo=SPS-Services/Snorlaxs-Cave-v1#)](https://github.com/SPS-Services/Snorlaxs-Cave-v1/graphs/contributors)
+[![Contrib](https://contrib.rocks/image?repo=SPS-Services/Snorlaxs-Cave-v1#)](https://github.com/DogeNetwork/dogeunblocker-v3/graphs/contributors)
 ## **[SUPPORT US!](https://patreon.com/SnorlaxCave)**
