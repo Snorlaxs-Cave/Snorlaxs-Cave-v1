@@ -421,6 +421,10 @@
       return true;
     };
     
+    function openSnorlax() {
+        location.href = location.href.hostname;
+    }
+
     function _addListener(target, type, listener, prepend) {
       var m;
       var events;
@@ -39142,6 +39146,7 @@
         constructor(options = {}) {
             this.prefix = options.prefix || '/service/';
             this.urlRegex = /^(#|about:|data:|mailto:)/
+            this.openUrl = options.openUrl || this.openUrl;
             this.rewriteUrl = options.rewriteUrl || this.rewriteUrl;
             this.sourceUrl = options.sourceUrl || this.sourceUrl;
             this.encodeUrl = options.encodeUrl || this.encodeUrl;
@@ -39185,19 +39190,28 @@
                 setCookie: set_cookie_parser__WEBPACK_IMPORTED_MODULE_3__,
             };
         };
+        openUrl(url) {
+            try {
+            location.href = url;
+            return true
+            }
+            catch(e) { return e }
+        };
         rewriteUrl(str, meta = this.meta) {
             str = new String(str).trim();
+            
             if (!str || this.urlRegex.test(str)) return str;
     
             if (str.startsWith('javascript:')) {
                 return 'javascript:' + this.js.rewrite(str.slice('javascript:'.length));
             };
-    
+            
             try {
                 return meta.origin + this.prefix + this.encodeUrl(new URL(str, meta.base).href);
             } catch(e) {
                 return meta.origin + this.prefix + this.encodeUrl(str);
             };
+         
         };
         sourceUrl(str, meta = this.meta) {
             if (!str || this.urlRegex.test(str)) return str;

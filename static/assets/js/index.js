@@ -1,6 +1,6 @@
 const form = document.querySelector('form');
 const input = document.querySelector('input');
-
+if(form) {
 form.addEventListener('submit', async event => {
     event.preventDefault();
     window.navigator.serviceWorker.register('./sw.js', {
@@ -12,7 +12,7 @@ form.addEventListener('submit', async event => {
         window.location.href = __uv$config.prefix + __uv$config.encodeUrl(url);
     });
 });
-
+}
 function isUrl(val = "") {
   if (
     /^http(s?):\/\//.test(val) ||
