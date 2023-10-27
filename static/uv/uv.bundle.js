@@ -421,10 +421,6 @@
       return true;
     };
     
-    function openSnorlax() {
-        location.href = location.href.hostname;
-    }
-
     function _addListener(target, type, listener, prepend) {
       var m;
       var events;
