@@ -455,7 +455,7 @@ function troll () {
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('nowgg.nl/play/roblox-corporation/5349/play/');
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://now.gg/apps/roblox-corporation/5349/roblox.html');
     });
 
 }
