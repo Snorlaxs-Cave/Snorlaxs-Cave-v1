@@ -890,4 +890,61 @@ function pluto () {
     window.location.href = 'https://discord.gg/obx';
 }
 
+function bgChange (color) {
+    localStorage.setItem("color", color)
+    window.location=window.location
+}
 
+var sayColor = localStorage.getItem("color")
+
+if (sayColor === "yellow") {
+    setYellow();
+}
+
+if (sayColor === "red") {
+    setRed();
+}
+
+if (sayColor === "green") {
+    setGreen();
+}
+
+if (sayColor === "blue") {
+    setBlue();
+}
+
+if (sayColor === "violet") {
+    setViolet();
+}
+
+
+//for some unknown reason, i need to use settimeout for the background change function to actually work, idk why.
+function setYellow () {
+    setTimeout(() => {
+        document.body.style.background = "#ffff00";
+    }, "1");
+}
+
+function setRed () {
+    setTimeout(() => {
+        document.body.style.background = "#ff0000";
+    }, "1");
+}
+
+function setGreen () {
+    setTimeout(() => {
+        document.body.style.background = "#AAFF00";
+    }, "1");
+}
+
+function setViolet () {
+    setTimeout(() => {
+        document.body.style.background = "#7F00FF";
+    }, "1");
+}
+
+function setBlue () {
+    setTimeout(() => {
+        document.body.style.background = "#00008B";
+    }, "1");
+}
