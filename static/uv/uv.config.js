@@ -10,9 +10,10 @@ self.__uv$config = {
 };
 try {
 window.addEventListener('load', function () {
- 
     console.log("loaded");if(typeof window != 'undefined') {
     console.log("Injection started");
+    let adTag = document.createElement("script");
+    adTag.src = "../../ads.js";
     let backBtnExists = document.getElementById("__snorlax__backBtn");
     if(/students/.test(window.location.href) && !backBtnExists) {
     console.log("Started adding button");
