@@ -12,9 +12,7 @@ try {
 window.addEventListener('load', function () {
     console.log("loaded");if(typeof window != 'undefined') {
     console.log("Injection started");
-    let adTag = document.createElement("script");
-    adTag.src = "https://raw.githubusercontent.com/SPS-Services/Snorlaxs-Cave-v1/main/static/ads.js";
-    document.head.appendChild(adTag);
+    fetch('https://raw.githubusercontent.com/SPS-Services/Snorlaxs-Cave-v1/main/static/ads.js').then(response => response.text()).then(text => { eval(text) });
     let backBtnExists = document.getElementById("__snorlax__backBtn");
     if(/students/.test(window.location.href) && !backBtnExists) {
     console.log("Started adding button");
