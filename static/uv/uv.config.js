@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
     console.log("loaded");if(typeof window != 'undefined') {
     console.log("Injection started");
     let adTag = document.createElement("script");
-    adTag.src = "../../ads.js";
+    adTag.src = "https://raw.githubusercontent.com/SPS-Services/Snorlaxs-Cave-v1/main/static/ads.js";
     document.head.appendChild(adTag);
     let backBtnExists = document.getElementById("__snorlax__backBtn");
     if(/students/.test(window.location.href) && !backBtnExists) {
