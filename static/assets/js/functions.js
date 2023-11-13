@@ -866,6 +866,16 @@ function krunker () {
 
 }  
 
+function nitrotype () {
+
+    window.navigator.serviceWorker.register('/sw.js', {
+        scope: __uv$config.prefix
+    }).then(() => {
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.nitrotype.com/');
+    });
+
+}  
+
 
 function ourDiscord () {
     window.location.href = 'https://discord.gg/Cqaa8x82Ch';
