@@ -958,3 +958,9 @@ function setBlue () {
         document.body.style.background = "#00008B";
     }, "1");
 }
+
+function setBlack () {
+    setTimeout(() => {
+        document.body.style.background = "#000000";
+    }, "1");
+}
