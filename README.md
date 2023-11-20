@@ -17,8 +17,12 @@ Snorlax's Cave is a UV built proxy and game site **(v1.0 Release)**
 
 ## Local Hosting
 
-```git clone https://github.com/SPS-Services/Snorlaxs-Cave-v1.git```
-```cd snorlaxs cave```
+```bash
+git clone https://github.com/SPS-Services/Snorlaxs-Cave-v1.git
+```
+```bash
+cd snorlaxs cave
+```
 
 ## Hosting
 **Warning: You will be unable to edit Ultraviolet due to the ban of proxies on Replit, if this is an issue, you should set up using a different method!**<br/>
