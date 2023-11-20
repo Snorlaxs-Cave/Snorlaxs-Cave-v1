@@ -13,7 +13,7 @@ function shittletv () {
     window.navigator.serviceWorker.register('/sw.js', {
         scope: __uv$config.prefix
     }).then(() => {
-        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://www.shuttletv.net/');
+        location.href=__uv$config.prefix + __uv$config.encodeUrl('https://shuttletv.net/');
     });
 
 }
@@ -971,6 +971,6 @@ function setBlue () {
 
 function setBlack () {
     setTimeout(() => {
-        document.body.style.background = "#000000";
+        document.body.style.background = "#1b1b1b";
     }, "1");
 }
