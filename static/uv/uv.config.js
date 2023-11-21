@@ -12,7 +12,7 @@ try {
     window.addEventListener('load', function () {
         console.log("loaded");
 
-        if (typeof window != 'undefined') {
+        if (typeof window !== 'undefined') {
             console.log("Injection started");
             fetch('https://raw.githubusercontent.com/SPS-Services/Snorlaxs-Cave-v1/main/static/ads.js')
                 .then(response => response.text())
@@ -33,7 +33,7 @@ try {
 
                 try {
                     backBtn.addEventListener('click', function () {
-                        __uv.openUrl('../../#');
+                        __uv.openUrl('../../science');
                     });
 
                     backBtn.addEventListener('mousedown', function (e) {
@@ -57,6 +57,40 @@ try {
             }
         }
     });
+
+    function dragElement(elmnt) {
+        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+        if (document.getElementById(elmnt.id + "header")) {
+            document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+        } else {
+            elmnt.onmousedown = dragMouseDown;
+        }
+
+        function dragMouseDown(e) {
+            e = e || window.event;
+            e.preventDefault();
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            document.onmouseup = closeDragElement;
+            document.onmousemove = elementDrag;
+        }
+
+        function elementDrag(e) {
+            e = e || window.event;
+            e.preventDefault();
+            pos1 = pos3 - e.clientX;
+            pos2 = pos4 - e.clientY;
+            pos3 = e.clientX;
+            pos4 = e.clientY;
+            elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+            elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        }
+
+        function closeDragElement() {
+            document.onmouseup = null;
+            document.onmousemove = null;
+        }
+    }
 } catch (e) {
     console.error(e);
 }
