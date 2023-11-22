@@ -974,11 +974,11 @@ function setBlue () {
 
 function setBlack () {
     setTimeout(() => {
-        document.body.style.background = "#1b1b1b";
+        document.body.style.background = "#000000";
     }, "1");
 }
 
-var imageUrl = localStorage.getItem("backgroundImage")
+var saycolor = localStorage.getItem("backgroundImage")
 
 function setImageBackground() {
     var url = document.getElementById('imageUrl').value;
