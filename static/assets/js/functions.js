@@ -978,6 +978,8 @@ function setBlack () {
     }, "1");
 }
 
+var imageUrl = localStorage.getItem("backgroundImage")
+
 function setImageBackground() {
     var url = document.getElementById('imageUrl').value;
     document.body.style.backgroundImage = 'url(' + url + ')';
