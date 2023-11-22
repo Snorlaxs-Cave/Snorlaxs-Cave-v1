@@ -975,8 +975,9 @@ function setBlack () {
     }, "1");
 }
 
-function setImageBackground() {
+function setImageBackground () {
+    setTimeout(() => {
     var url = document.getElementById('imageUrl').value;
     document.body.style.backgroundImage = 'url(' + url + ')';
-    document.cookie = "backgroundImage=" + url;
+    }, "1");
 }
