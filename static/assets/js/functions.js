@@ -974,3 +974,9 @@ function setBlack () {
         document.body.style.background = "#1b1b1b";
     }, "1");
 }
+
+    function setImageBackground() {
+      var url = document.getElementById('imageUrl').value;
+      document.body.style.backgroundImage = 'url(' + url + ')';
+      document.cookie = "backgroundImage=" + url;
+    }
