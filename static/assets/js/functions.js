@@ -937,6 +937,9 @@ if (sayColor === "violet") {
     setViolet();
 }
 
+if (sayColor === "black") {
+    setBlack();
+}
 
 //for some unknown reason, i need to use settimeout for the background change function to actually work, idk why.
 function setYellow () {
