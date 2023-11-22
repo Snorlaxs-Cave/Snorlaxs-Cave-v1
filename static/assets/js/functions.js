@@ -975,10 +975,21 @@ function setBlack () {
     }, "1");
 }
 
+    window.onload = function() {
+      var bgImage = getCookie('backgroundImage');
+      if (bgImage) {
+        document.body.style.backgroundImage = 'url(' + bgImage + ')';
+      }
+    }
+
     function setImageBackground() {
-    setTimeout(() => {
       var url = document.getElementById('imageUrl').value;
       document.body.style.backgroundImage = 'url(' + url + ')';
       document.cookie = "backgroundImage=" + url;
-    }, "1");
-}
+    }
+
+    function getCookie(name) {
+      var value = "; " + document.cookie;
+      var parts = value.split("; " + name + "=");
+      if (parts.length == 2) return parts.pop().split(";").shift();
+    }
