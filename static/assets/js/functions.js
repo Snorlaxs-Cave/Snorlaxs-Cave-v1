@@ -980,9 +980,12 @@ function setBlack () {
 
 var saycolor = localStorage.getItem("backgroundImage")
 
-function setImageBackground() {
-    var url = document.getElementById('imageUrl').value;
-    document.body.style.backgroundImage = 'url(' + url + ')';
-    document.body.style.background = 'url(' + url + ')';
-    localStorage.setItem("backgroundImage", url);
-} 
+
+function setImageBackground () {
+    setTimeout(() => {
+        var url = document.getElementById('imageUrl').value;
+        document.body.style.backgroundImage = 'url(' + url + ')';
+        document.body.style.background = 'url(' + url + ')';
+        localStorage.setItem("backgroundImage", url);
+    }, "1");
+}

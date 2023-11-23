@@ -8,6 +8,7 @@ self.__uv$config = {
     config: '/uv/uv.config.js',
     sw: '/uv/uv.sw.js',
 };
+
 try {
     window.addEventListener('load', function () {
         console.log("loaded");
@@ -61,12 +62,16 @@ try {
     const button = document.getElementById('toggleButton');
     button.style.display = localStorage.getItem('buttonVisible') === 'false' ? 'none' : 'block';
 
-    document.addEventListener('keydown', function(event) {
-      if (event.key === '1') {
-        button.style.display = button.style.display === 'none' ? 'block' : 'none';
-        localStorage.setItem('buttonVisible', button.style.display !== 'none');
-      }
+    document.addEventListener('keydown', function (event) {
+        if (event.key === '1') {
+            button.style.display = button.style.display === 'none' ? 'block' : 'none';
+            localStorage.setItem('buttonVisible', button.style.display !== 'none');
+        }
     });
-    window.onload = function() {
-      alert("TO HIDE THE GO BACK BUTTON PRESS 1, TO BRING IT BACK PRESS 1 AGAIN");
+
+    window.onload = function () {
+        alert("TO HIDE THE GO BACK BUTTON PRESS 1, TO BRING IT BACK PRESS 1 AGAIN");
     };
+} catch (error) {
+    console.error(error);
+}
