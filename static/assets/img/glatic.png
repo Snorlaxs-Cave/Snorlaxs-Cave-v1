@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/img/icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/animations.css" />
+  <script src="/assets/js/functions.js"></script>
+  <title>404 | Snorlax's Cave</title>
+</head>
+<body>
+  <nav>
+    <div class="heading">
+       <a href="https://discord.gg/Cqaa8x82Ch" class="headinglink" target="new">Snorlax's Cave</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/math">Games</a></li>
+      <li><a href="/english">Apps</a></li>
+      <li><a href="/science">Proxy</a></li>
+      <li><a href="/about">About</a></li>
+    </ul>
+  </nav>
+  <br>
+  <br>
+  <div class="intro" data-m="bounce-down" data-m-duration="1">
+  <h1 class="large">404 Page Not Found</h1>
+  <p style="padding:20px;">The page you requested was not found. <a href="/">Go Home!</a></p>
+
+  </div>
+  <script src="/assets/js/index.js"></script>
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
+  </body>
+  </html>

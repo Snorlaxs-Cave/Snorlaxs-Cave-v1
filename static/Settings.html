@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/assets/img/newlogo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/animations.css" />
+  <script data-cfasync="false" typ="text/javascript" src="ads.js"></script>
+  <script data-cfasync="false" typ="text/javascript" src="ads2.js"></script>
+  <script src="/assets/js/functions.js"></script>
+  <title>Settings | Snorlax's Cave</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTCTYH80S1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTCTYH80S1');
+</script>
+<body>
+  <nav>
+    <div class="heading">
+       <a href="/#" class="headinglink">Snorlax's Cave</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/math">Games</a></li>
+      <li><a href="/english">Apps</a></li>
+      <li><a href="/science">Proxy</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/settings" class="active">Settings</a></li>
+
+    </ul>
+  </nav>
+  <br>
+  <br>
+  <div class="apps">
+    <h1 style="padding: 20px;">Background Changer</h1>
+    <div class="search-results" style="display: block;justify-content: center; flex-wrap: wrap; gap:10px;">
+      <input class="search-bar" style="width:250px;height:50px;margin:10px;" id="imageUrl" type="text" placeholder="Enter image URL">
+      <br>
+      <button onclick="setImageBackground()" style="width:70px;height:45px;">Apply</button>
+      <button onclick="localStorage.removeItem('backgroundImage');window.location.reload();" style="width:70px;height:45px;">Reset</button>
+  </div>
+
+  <!--Eventually, when more settings are added, split the divs with a <br> or 2-->
+  <script src="/assets/js/index.js"></script>
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script>
+    // Custom Background Check
+    var bgUrl = localStorage.getItem('backgroundImage');
+    if (bgUrl === 'none' || bgUrl === null || bgUrl === '') {
+      document.body.style.backgroundImage = `url('/assets/img/snorlax_background.jpg')`;
+    } else {
+        document.body.style.backgroundImage = `url(${bgUrl})`;
+    }
+    </script>
+  </body>
+  </html>

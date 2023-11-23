@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Snorlax's Cave brings your students the best learning methods and skills to help them be the best and most efficient at studying!" />
+  <title>Home | Snorlax's Cave</title>
+  <meta name="image" content="assets/img/icon.png">
+  <link rel="icon" href="/assets/img/newlogo.png">
+  <script data-cfasync="false" typ="text/javascript" src="ads.js"></script>
+  <script data-cfasync="false" typ="text/javascript" src="ads2.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <meta name="sps-bot" content="true">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/animations.css" />
+  <script src="/assets/js/functions.js"></script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZTCTYH80S1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZTCTYH80S1');
+</script>
+<body>
+  <nav>
+    <div class="heading">
+       <a href="/#" class="headinglink">Snorlax's Cave</a>
+    </div>
+    <ul class="nav-links">
+      <li><a class="active" href="/">Home</a></li>
+      <li><a href="/math">Games</a></li>
+      <li><a href="/english">Apps</a></li>
+      <li><a href="/science">Proxy</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/settings">Settings</a></li>
+
+    </ul>
+  </nav>
+  <br>
+  <br>
+  <div class="intro" data-m="bounce-down" data-m-duration="1">
+  <h1 class="large">Welcome to Snorlax's Cave!</h1>
+  <p style="padding:20px;">Snorlax's Cave is a UV built proxy and game site (v1.0)</p>
+  <a href="#" onclick="cloak()" style="text-decoration: none;color:white;"><button>about:blank</button></a>
+  <a href="#" onclick="ourDiscord()" style="text-decoration: none;color:white;"><button>Join our Discord</button></a>
+  <a href="#" onclick="patreon()" style="text-decoration: none;color:white;"><button>SUPPORT US</button></a>
+  </div>
+  <script src="/assets/js/index.js"></script>
+  <script src="/uv/uv.bundle.js"></script>
+  <script src="/uv/uv.config.js"></script>
+  <script>
+    // Custom Background Check
+    var bgUrl = localStorage.getItem('backgroundImage');
+    if (bgUrl === 'none' || bgUrl === null || bgUrl === '') {
+      document.body.style.backgroundImage = `url('/assets/img/snorlax_background.jpg')`;
+    } else {
+        document.body.style.backgroundImage = `url(${bgUrl})`;
+    }
+    </script>
+  </body>
+  </html>
