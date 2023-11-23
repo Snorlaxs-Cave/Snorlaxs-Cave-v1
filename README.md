@@ -23,6 +23,10 @@ git clone https://github.com/SPS-Services/Snorlaxs-Cave-v1.git
 ```bash
 cd snorlaxs cave
 ```
+```bash
+node index.js
+```
+
 
 ## Hosting
 **Warning: You will be unable to edit Ultraviolet due to the ban of proxies on Replit, if this is an issue, you should set up using a different method!**<br/>
