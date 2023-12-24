@@ -888,7 +888,7 @@ function nitrotype () {
 
 
 function ourDiscord () {
-    window.location.href = 'https://discord.gg/Cqaa8x82Ch';
+    window.location.href = 'https://discord.gg/snorlaxscave';
 }
 
 
