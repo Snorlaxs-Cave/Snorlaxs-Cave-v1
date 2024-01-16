@@ -38,5 +38,7 @@ node index.js
 [![Deploy to Render](https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/SPS-Services/Snorlaxs-Cave-v1)
 [![Deploy with Vercel](https://binbashbanana.github.io/deploy-buttons/buttons/remade/vercel.svg)](https://vercel.com/new/clone?repositoryurl=https://github.com/SPS-Services/Snorlaxs-Cave-v1)
 ## Contributors:
-[![Contrib](https://contrib.rocks/image?repo=SPS-Services/Snorlaxs-Cave-v1#)](https://github.com/SPS-Services/Snorlaxs-Cave-v1/graphs/contributors)
+<a href="https://github.com/Snorlaxs-Cave/Snorlaxs-Cave-v1/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Snorlaxs-Cave/Snorlaxs-Cave-v1" />
+</a>
 ## **[SUPPORT US!](https://patreon.com/SnorlaxCave)**
