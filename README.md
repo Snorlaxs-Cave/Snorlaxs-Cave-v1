@@ -6,7 +6,7 @@ Snorlax's Cave is a UV built proxy and game site **(v1.0 Release)**
 
 ## We offer:
 - Many Unblocked Apps & Games
-- Built in web proxy
+- Built in web 
 - Free emulator
 - Many customizable features
 
